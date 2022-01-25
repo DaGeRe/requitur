@@ -91,7 +91,7 @@
   <scm>
     <connection>scm:git:ssh://github.com:DaGeRe/requitur.git</connection>
     <developerConnection>scm:git:git@github.com:DaGeRe/requitur.git</developerConnection>
-    <url>https://git@github.com:DaGeRe/peass.git</url>
+    <url>https://git@github.com:DaGeRe/requitur.git</url>
     <tag>HEAD</tag>
   </scm>
 </project>
