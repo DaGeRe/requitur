@@ -6,6 +6,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>requitur</name>
   <description>Library for Run-length Encoding and Seqitur for Java Classes</description>
+  <url>https://github.com/DaGeRe/requitur</url>
 
   <dependencies>
     <dependency>
