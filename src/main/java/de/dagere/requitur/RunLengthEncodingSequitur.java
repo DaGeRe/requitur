@@ -1,4 +1,4 @@
-package de.dagere.peass.dependency.traces.requitur;
+package de.dagere.requitur;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import de.dagere.peass.dependency.traces.requitur.content.Content;
-import de.dagere.peass.dependency.traces.requitur.content.RuleContent;
+import de.dagere.requitur.content.Content;
+import de.dagere.requitur.content.RuleContent;
 
 public class RunLengthEncodingSequitur {
 

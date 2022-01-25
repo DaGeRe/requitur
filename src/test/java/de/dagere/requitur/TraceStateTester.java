@@ -1,4 +1,4 @@
-package de.dagere.peass.dependency.traces.requitur;
+package de.dagere.requitur;
 
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -10,8 +10,13 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 
-import de.dagere.peass.dependency.traces.requitur.content.Content;
-import de.dagere.peass.dependency.traces.requitur.content.RuleContent;
+import de.dagere.requitur.Digram;
+import de.dagere.requitur.ReducedTraceElement;
+import de.dagere.requitur.Rule;
+import de.dagere.requitur.Sequitur;
+import de.dagere.requitur.Symbol;
+import de.dagere.requitur.content.Content;
+import de.dagere.requitur.content.RuleContent;
 
 public class TraceStateTester {
 

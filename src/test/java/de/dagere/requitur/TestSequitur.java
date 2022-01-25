@@ -1,4 +1,4 @@
-package de.dagere.peass.traceminimization.pure;
+package de.dagere.requitur;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -9,12 +9,12 @@ import java.util.stream.Collectors;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-import de.dagere.peass.dependency.traces.requitur.ContentTraceExpander;
-import de.dagere.peass.dependency.traces.requitur.Rule;
-import de.dagere.peass.dependency.traces.requitur.Sequitur;
-import de.dagere.peass.dependency.traces.requitur.content.Content;
-import de.dagere.peass.dependency.traces.requitur.content.RuleContent;
-import de.dagere.peass.dependency.traces.requitur.content.StringContent;
+import de.dagere.requitur.ContentTraceExpander;
+import de.dagere.requitur.Rule;
+import de.dagere.requitur.Sequitur;
+import de.dagere.requitur.content.Content;
+import de.dagere.requitur.content.RuleContent;
+import de.dagere.requitur.content.StringContent;
 
 /**
  * Tests only sequitur on artificial examples given by manually constructed traces.

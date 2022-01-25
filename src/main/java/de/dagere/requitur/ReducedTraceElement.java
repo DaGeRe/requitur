@@ -1,6 +1,6 @@
-package de.dagere.peass.dependency.traces.requitur;
+package de.dagere.requitur;
 
-import de.dagere.peass.dependency.traces.requitur.content.Content;
+import de.dagere.requitur.content.Content;
 
 public class ReducedTraceElement {
 	private final Content value;

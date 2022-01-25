@@ -1,4 +1,4 @@
-package de.dagere.peass.dependency.traces.requitur;
+package de.dagere.requitur;
 
 import java.util.HashMap;
 import java.util.Map;

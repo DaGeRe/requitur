@@ -1,4 +1,4 @@
-package de.dagere.peass.dependency.traces.requitur.content;
+package de.dagere.requitur.content;
 
 /**
  * Represents the content of an symbol of an context-free grammar. For correctness, subclasses should override equals

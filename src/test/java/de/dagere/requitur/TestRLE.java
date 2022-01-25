@@ -1,4 +1,4 @@
-package de.dagere.peass.traceminimization.pure;
+package de.dagere.requitur;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -6,10 +6,10 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-import de.dagere.peass.dependency.traces.requitur.ContentTraceExpander;
-import de.dagere.peass.dependency.traces.requitur.RunLengthEncodingSequitur;
-import de.dagere.peass.dependency.traces.requitur.Sequitur;
-import de.dagere.peass.dependency.traces.requitur.content.Content;
+import de.dagere.requitur.ContentTraceExpander;
+import de.dagere.requitur.RunLengthEncodingSequitur;
+import de.dagere.requitur.Sequitur;
+import de.dagere.requitur.content.Content;
 
 /**
  * Tests Run-Length-Encoding with Sequitur on artificial examples given by manually constructed traces.

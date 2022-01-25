@@ -1,4 +1,4 @@
-package de.dagere.peass.dependency.traces.requitur;
+package de.dagere.requitur;
 
 class Digram {
 	private final Symbol start, end;

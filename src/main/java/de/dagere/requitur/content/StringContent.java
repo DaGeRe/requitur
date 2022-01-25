@@ -1,4 +1,4 @@
-package de.dagere.peass.dependency.traces.requitur.content;
+package de.dagere.requitur.content;
 
 public class StringContent extends Content {
 	private final String value;
