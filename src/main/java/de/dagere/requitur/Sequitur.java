@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -138,9 +139,53 @@ public class Sequitur {
       return trace1;
    }
 
+   public static List<String> getExpandedTrace(List<String> lines) throws IOException {
+      final List<String> trace1 = new LinkedList<>();
+      for (Iterator<String> lineIterator = lines.iterator(); lineIterator.hasNext(); ) {
+         String line = lineIterator.next();
+         final List<String> elements = getCurrentValues(line, lineIterator).elements;
+         trace1.addAll(elements);
+      }
+      return trace1;
+   }
+
    static class Return {
       int readLines = 1;
       List<String> elements = new LinkedList<>();
+   }
+   
+   public static Return getCurrentValues(String line, final Iterator<String> reader) throws IOException {
+      final Return current = new Return();
+      final String trimmedLine = line.trim();
+      if (line.matches("[ ]*[0-9]+ x [#]?[0-9]* \\([0-9]+\\)")) {
+         final String[] parts = trimmedLine.split(" ");
+         final int count = Integer.parseInt(parts[0]);
+         final int length = Integer.parseInt(parts[3].replaceAll("[\\(\\)]", ""));
+         final List<String> subList = new LinkedList<>();
+         for (int i = 0; i < length;) {
+            line = reader.next();
+            final Return lines = getCurrentValues(line, reader);
+            current.readLines += lines.readLines;
+            i += lines.readLines;
+            subList.addAll(lines.elements);
+         }
+         for (int i = 0; i < count; i++) {
+            current.elements.addAll(subList);
+         }
+      } else if (line.matches("[ ]*[0-9]+ x .*$")) {
+         final String method = trimmedLine.substring(trimmedLine.indexOf("x") + 2);
+         final String countString = trimmedLine.substring(0, trimmedLine.indexOf("x") - 1);
+         final int count = Integer.parseInt(countString);
+         for (int i = 0; i < count; i++) {
+            current.elements.add(method);
+         }
+      } else if (line.matches("[ ]*[#]?[0-9]* \\([0-9]+\\)")) {
+         // Do nothing - just info element, that same trace pattern occurs twice
+      } else {
+         current.elements.add(trimmedLine);
+
+      }
+      return current;
    }
 
    public static Return getCurrentValues(String line, final BufferedReader reader) throws IOException {
