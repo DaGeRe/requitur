@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.dagere</groupId>
   <artifactId>requitur</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3-SNAPSHOT</version>
   <name>requitur</name>
   <description>Library for Run-length Encoding and Seqitur for Java Classes</description>
   <url>https://github.com/DaGeRe/requitur</url>
@@ -128,7 +128,7 @@
     <connection>scm:git:ssh://github.com:DaGeRe/requitur.git</connection>
     <developerConnection>scm:git:git@github.com:DaGeRe/requitur.git</developerConnection>
     <url>https://git@github.com:DaGeRe/requitur.git</url>
-    <tag>requitur-0.0.2</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
