@@ -9,9 +9,6 @@ import java.util.stream.Collectors;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-import de.dagere.requitur.ContentTraceExpander;
-import de.dagere.requitur.Rule;
-import de.dagere.requitur.Sequitur;
 import de.dagere.requitur.content.Content;
 import de.dagere.requitur.content.RuleContent;
 import de.dagere.requitur.content.StringContent;

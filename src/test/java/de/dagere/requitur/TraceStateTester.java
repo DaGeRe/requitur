@@ -10,11 +10,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 
-import de.dagere.requitur.Digram;
-import de.dagere.requitur.ReducedTraceElement;
-import de.dagere.requitur.Rule;
-import de.dagere.requitur.Sequitur;
-import de.dagere.requitur.Symbol;
 import de.dagere.requitur.content.Content;
 import de.dagere.requitur.content.RuleContent;
 

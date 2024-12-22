@@ -6,9 +6,6 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-import de.dagere.requitur.ContentTraceExpander;
-import de.dagere.requitur.RunLengthEncodingSequitur;
-import de.dagere.requitur.Sequitur;
 import de.dagere.requitur.content.Content;
 
 public class TestRLESequiturEfficiency {
